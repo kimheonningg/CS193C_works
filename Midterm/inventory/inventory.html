@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title> Inventory </title>
+<script src="inventory.js" defer> </script>
+</head>
+<body>
+    <h1> Inventory </h1>
+    Grade me in Chrome. <br>
+
+    <h2> Data Entry </h2>
+    <table>
+        <tr><td><label for="entry_name"> Name </label></td>
+            <td><input name="entry_name" id="entry_name" type="text" size="20" /></td></tr>
+        <tr><td><label for="entry_category"> Category </label></td>
+            <td><input name="entry_category" id="entry_category" type="text" size="20" /></td></tr>
+        <tr><td><label for="entry_amount"> Amount </label></td>
+            <td><input name="entry_amount" id="entry_amount" type="text" size="20" /></td></tr>
+    </table>
+    <button class="entry_add" type="button" id="entry_add"> Add to Inventory </button>
+
+    <h2> Data Lookup </h2>
+    <table>
+        <tr><td><label for="lookup_name"> Name </label></td>
+            <td><input name="lookup_name" id="lookup_name" type="text" size="20" /></td></tr>
+        <tr><td><label for="lookup_category"> Category </label></td>
+            <td><input name="lookup_category" id="lookup_category" type="text" size="20" /></td></tr>
+    </table>
+    <button class="lookup" type="button" id="lookup"> Lookup </button>
+
+    <h2> Results </h2>
+    <div id="results"> Enter Lookup Criteria </div>
+</body>
+</html>
