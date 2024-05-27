@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: 850px 400px;
+}
+
+#target_area{
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    height: 400px;
+    width: 800px;
+    float: left;
+}
+
+#info_section {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: sans-serif;
+}

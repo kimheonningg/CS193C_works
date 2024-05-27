@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    grid-template-rows: 20px 250px calc(100% - 270px);
+    grid-template-columns: calc(100% - 290px) 270px 20px;
+}
+
+#control_section {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#control_table {
+    width: 270px;
+    height: 250px;
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 2;
+}

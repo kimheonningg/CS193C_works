@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title> Rectangle </title>
+<link href="rectangle.css" rel="stylesheet" type="text/css"/>
+<script src="rectangle.js" defer> </script>
+</head>
+<body>
+    Grade me in Chrome <br>
+    <div id="draw_rec"> </div>
+    <div class="control_section" id="control_section"> 
+        <table id="control_table">
+            <tr> <td> x: <input name="x_position" id="x_position" type="text" size="20" /> </td></tr>
+            <tr> <td> y: <input name="y_position" id="y_position" type="text" size="20" /> </td> </tr>
+            <tr> <td> width: <input name="rec_width" id="rec_width" type="text" size="20" /> </td> </tr>
+            <tr> <td> height: <input name="rec_height" id="rec_height" type="text" size="20" /> </td> </tr>
+            <tr> <td> 
+                <div id="color_selectbox">
+                    <select name="color_choose" id="color_choose" size="1">
+                        <option name="color" value="white" id="white"> white </option>
+                        <option name="color" value="red" id="red"> red </option>
+                        <option name="color" value="green" id="green"> green </option>
+                        <option name="color" value="blue" id="blue"> blue </option>
+                    </select>
+                </div>
+            </td> </tr>
+            <tr> <td>
+                <button class="update" type="button" id="update"> Update </button>
+                <button class="delete" type="button" id="delete"> Delete </button>
+            </td> </tr>
+        </table>
+    </div>
+</body>
+</html>
