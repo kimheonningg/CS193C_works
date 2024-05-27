@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title> Stanford Map </title>
+<link href="map.css" rel="stylesheet" type="text/css"/>
+<script src="map.js" defer> </script>
+</head>
+<body>
+<!--
+&gt is > 
+&lt is <
+-->
+    <div id="map_frame">
+        <img id="map_pic" src="map-s.gif" alt="map image">
+    </div>
+    <div id="controls">
+        <div id="zoom">
+            <input type="button" class="buttons_1" id="zoom_in" value="+">
+            <input type="button" class="buttons_1" id="zoom_out" value="-">
+        </div>
+        <div id="move">
+            <input type="button" class="buttons_2" id="move_up" value="&gt" style="transform: rotate(270deg)">
+            <input type="button" class="buttons_1" id="move_left" value="&lt">
+            <input type="button" class="buttons_1" id="move_right" value="&gt">
+            <input type="button" class="buttons_2" id="move_down" value="&gt" style="transform: rotate(90deg)">
+        </div>
+    </div>
+</body>
+</html>

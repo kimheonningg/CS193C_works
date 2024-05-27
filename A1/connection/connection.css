@@ -1,0 +1,155 @@
+body {
+	display: grid;
+	grid-template-columns: 20px 200px 20px 470px 109px 20px 300px;
+	grid-template-rows: 30px 90px 20px 20px 30px 30px 10px 60px 10px 30px 20px 20px 30px 20px 20px;
+    font-family: sans-serif;
+}
+
+#title {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #9A0000;
+    color: white;
+    font-size: 70px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+}
+
+#logo {
+    grid-column-start: 5;
+	grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#molly {
+    grid-column-start: 2;
+	grid-row-start: 4;
+    grid-row-end: 9;
+}
+
+#aboutMe {
+    grid-column-start: 2;
+	grid-row-start: 10;
+    background-color: #CC9191;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    text-indent: 5px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#aboutMeContent1 {
+    grid-column-start: 2;
+	grid-row-start: 11;
+    font-size: 11pt;
+}
+
+#aboutMeContent2 {
+    grid-column-start: 2;
+	grid-row-start: 12;
+    font-size: 11pt;
+}
+
+#friends {
+    grid-column-start: 2;
+	grid-row-start: 13;
+    background-color: #CC9191;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    text-indent: 5px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#friendsContent1 {
+    grid-column-start: 2;
+	grid-row-start: 14;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+#friendsContent2 {
+    grid-column-start: 2;
+	grid-row-start: 15;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+#flopup {
+    grid-column-start: 4;
+    grid-column-end: 6;
+	grid-row-start: 4;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#status {
+    grid-column-start: 4;
+    grid-column-end: 6;
+	grid-row-start: 6;
+    background-color: #CC9191;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    text-indent: 5px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#status1 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+	grid-row-start: 8;
+    border-top: black 1.5px solid;
+    border-bottom: black 1.5px solid;
+    line-height: 60px;
+}
+
+#status2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+	grid-row-start: 9;
+    grid-row-end: 12;
+    border-bottom: black 1.5px solid;
+    line-height: 60px;
+}
+
+#status3{
+    grid-column-start: 4;
+    grid-column-end: 6;
+	grid-row-start: 12;
+    grid-row-end: 14;
+    border-bottom: black 1.5px solid;
+    line-height: 50px;
+}
+
+#status4{
+    grid-column-start: 4;
+    grid-column-end: 6;
+	grid-row-start: 14;
+    line-height: 80px;
+}
+
+#updates{
+    grid-column-start: 7;
+	grid-row-start: 1;
+    background-color: #CC9191;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#textInput {
+    grid-column-start: 7;
+	grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#button {
+    grid-column-start: 7;
+    grid-row-start: 6;
+}

@@ -1,0 +1,274 @@
+body {
+	display: grid;
+	grid-template-columns: 15px 400px 450px;
+	grid-template-rows: 70px 155px 15px 270px 130px 100px;
+    font-family: sans-serif;
+}
+
+.first {
+    font-size: 17pt;
+}
+
+#title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+#configuration {
+    grid-column-start: 2;
+	grid-row-start: 2;
+    grid-row-end: 4;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 310px 80px;
+    grid-template-rows: 30px 180px;
+}
+
+#configuration_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-color: gray;
+    border-top: black 1.2px solid;
+    border-bottom: black 1.2px solid;
+    border-right: black 1.2px solid;
+    border-left: black 1.2px solid;
+    line-height: 30px;
+    text-indent: 5px;
+    color: white;
+}
+
+#configuration_radio {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    line-height: 33px;
+}
+
+#configuation_price {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    line-height: 33px;
+}
+
+#factory_options {
+    grid-column-start: 2;
+	grid-row-start: 4;
+    margin-top: 15px;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 325px 65px;
+    grid-template-rows: 30px 70px 125px 45px;
+}
+
+#factory_options_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-color: gray;
+    border-top: black 1.2px solid;
+    border-bottom: black 1.2px solid;
+    border-right: black 1.2px solid;
+    border-left: black 1.2px solid;
+    line-height: 30px;
+    text-indent: 5px;
+    color: white;
+}
+
+#factory_options_left_1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#factory_options_left_2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+#factory_options_left_3 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+#factory_options_price_1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#factory_options_price_2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+#factory_options_price_3 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    position: relative;
+    left: 45px;
+}
+
+ul {
+    font-size: 10pt;
+    line-height: 18px;
+}
+
+#dealer_options {
+    grid-column-start: 2;
+	grid-row-start: 5;
+    margin-top: 15px;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 330px 60px;
+    grid-template-rows: 30px 100px;
+}
+
+#dealer_options_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-color: gray;
+    border-top: black 1.2px solid;
+    border-bottom: black 1.2px solid;
+    border-right: black 1.2px solid;
+    border-left: black 1.2px solid;
+    line-height: 30px;
+    text-indent: 5px;
+    color: white;
+}
+
+#dealer_options_radio {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    line-height: 25px;
+}
+
+#dealer_options_price {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    line-height: 25px;
+}
+
+#total_price {
+    grid-column-start: 2;
+	grid-row-start: 6;
+    margin-top: 15px;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 280px 110px;
+    grid-template-rows: 30px 70px;
+}
+
+#total_price_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-color: gray;
+    border-top: black 1.2px solid;
+    border-bottom: black 1.2px solid;
+    border-right: black 1.2px solid;
+    border-left: black 1.2px solid;
+    line-height: 30px;
+    text-indent: 5px;
+    color: white;
+}
+
+#total_price_textbox {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-top: 18px;
+    position: relative;
+    bottom: 5px;
+    left: 15px;
+}
+
+#total_price_button {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 18px;
+    position: relative;
+    bottom: 5px;
+}
+
+#car_color {
+    grid-column-start: 3;
+	grid-row-start: 2;
+    margin-top: 15px;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: 30px 110px;
+}
+
+#car_color_title {
+    grid-row-start: 1;
+    background-color: gray;
+    border-top: black 1.2px solid;
+    border-bottom: black 1.2px solid;
+    border-right: black 1.2px solid;
+    border-left: black 1.2px solid;
+    line-height: 30px;
+    text-indent: 5px;
+    color: white;
+}
+
+#car_color_content {
+    grid-row-start: 2;
+    position: relative;
+    top: 0px;
+}
+
+#car_color_selectbox {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+#car_color_choose {
+    width: 60px;
+    height: 100px;
+}
+
+#car_color_img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

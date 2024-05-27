@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 250px 30px;
+}
+
+#first_card {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+#second_card {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#third_card {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+#fourth_card {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+
+#fifth_card {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 5;
+}
+
+#sixth_card {
+    padding: 50px;
+    grid-row-start: 1;
+    grid-column-start: 6;
+}
+
+#restart_game {
+    padding-top: 10px;
+    padding-left: 5px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>
+    Configure Your GT Super Sportscar
+</title>
+<link href="car_options.css" rel="stylesheet" type="text/css" /> 
+<script src="car_options_calculate.js" defer></script>
+<script src="car_options_color-change.js" defer></script>
+</head>
+<body>
+    <div id="title">  Configure Your GT Super  Sportscar </div>
+
+    <div id="configuration">
+        <div id="configuration_title"> <span class="first">C</span>ONFIGURATION </div>
+        <div id="configuration_radio">
+            <label><input type="radio" id="gt_manual" value=17790 name="configuration"/>
+                GT Manual </label><br />
+            <label><input type="radio" id="gt_automatic" value=18590 name="configuration" />
+                GT Automatic </label><br />
+            <label><input type="radio" id="gt-s_manual" value=22455 name="configuration" />
+                GT-S Manual </label><br />
+            <label><input type="radio" id="gt-s_sportshift" value=23155 name="configuration" />
+                GT-S Sportshift </label><br />
+        </div>
+        <div id="configuation_price">
+            $17,790.00 <br> $18,590.00 <br> $22,455.00 <br> $23,155.00
+        </div>
+    </div>
+
+    <div id="factory_options">
+        <div id="factory_options_title"> <span class="first">F</span>ACTORY <span class="first">O</span>PTIONS </div>
+        <div id="factory_options_left_1">
+            <label><input type="radio" id="option_combo_1" value=1235 name="factory_options"/>
+                Option Combo #1 </label><br />
+            <ul> 
+                <li> Power Windows, Doors, Cruise Control </li>
+            </ul>
+        </div>
+        <div id="factory_options_left_2">
+            <label><input type="radio" id="option_combo_2" value=3354 name="factory_options"/>
+                Option Combo #2 </label><br />
+            <ul> 
+                <li> Rear Spoiler and Fog Lamps </li>
+                <li> Keyless Entry </li>
+                <li> Power Tilt & Slide Moonroof </li>
+                <li> Power Windows, Doors, Cruise Control </li>
+            </ul>
+        </div>
+        <div id="factory_options_left_3">
+            <label><input type="radio" id="option_combo_no" value=0 name="factory_options"/>
+                No Combo </label><br />
+        </div>
+        <div id="factory_options_price_1"> $1235.00 </div>
+        <div id="factory_options_price_2"> $3354.00 </div>
+        <div id="factory_options_price_3"> $0 </div>
+    </div>
+
+    <div id="dealer_options">
+        <div id="dealer_options_title"> <span class="first">D</span>EALER <span class="first">O</span>PTIONS </div>
+        <div id="dealer_options_radio">
+            <label><input type="checkbox" id="upgraded_stereo_system" value=550 name="dealer_options"> 
+                Upgraded Stereo System </label><br />
+            <label><input type="checkbox" id="vip_security_system" value=399 name="dealer_options"> 
+                VIP Security System </label><br />
+            <label><input type="checkbox" id="auto-dimming_mirror" value=295 name="dealer_options"> 
+                Auto-Dimming Mirror </label><br />
+        </div>
+        <div id="dealer_options_price">
+            $550.00 <br> $399.00 <br> $295.00
+        </div>
+    </div>
+
+    <div id="total_price">
+        <div id="total_price_title"> <span class="first">T</span>OTAL <span class="first">P</span>RICE </div>
+        <div id="total_price_textbox">
+            <div> <input type="text" id="total_price_res"/> </div>
+        </div>
+        <div id="total_price_button">
+            <button class="total_price" type="button" id="calculate_total" onclick="calculate_sum()"> Calculate Total </button>
+        </div>
+    </div>
+
+    <div id="car_color">
+        <div id="car_color_title"> <span class="first">C</span>HOOSE <span class="first">A</span> <span class="first">C</span>OLOR </div>
+        <div id="car_color_content">
+            <div id="car_color_selectbox">
+                <select name="car_color_choose" id="car_color_choose" size="5" onchange="changeColor()">
+                    <option value="Red" id="Red"> Red </option>
+                    <option value="Blue" id="Blue"> Blue </option>
+                    <option value="Silver" id="Silver"> Silver </option>
+                    <option value="White" id="White"> White </option>
+                    <option value="Black" id="Black"> Black </option>
+                </select>
+            </div>
+            <div id="car_color_img"> <img id="car_color_image" src="red.jpg" alt="red car" width="90%"> </div>
+        </div>
+    </div>
+</body>
+</html>

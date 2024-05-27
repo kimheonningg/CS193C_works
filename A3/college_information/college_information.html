@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Bay Area Colleges and Universities</title>
+<link href="college_information.css" rel="stylesheet" type="text/css" />
+<script src="colleges.js" defer></script>
+</head>
+<body>
+    <div id="title">
+        Bay Area Colleges and Universities
+    </div>
+    <div id="left">
+        <table id="table_left">
+            <thead>
+                <tr> <th class="table_left_th"> Name </th> <th class="table_left_th"> SAT High </th> <th class="table_left_th"> SAT Low </th> <th class="table_left_th"> Tuition </th></tr>
+            </thead>
+            <tbody id="table_left_body"> 
+            </tbody>
+        </table>
+    </div>
+    <div id="right">
+        <div id="right_title"> Search Criteria </div> 
+        <div id="radio_public"> <label><input type="radio" id="public" name="school_type"/> Public </label> </div>
+        <div id="radio_private"> <label><input type="radio" id="private" name="school_type"/> Private </label> </div>
+        <div id="radio_dontcare"> <label><input type="radio" id="dont_care" name="school_type"/> Don't Care </label> </div>
+        <div id="big_max_tuit"> Maximum Tuition </div>
+        <div id="small_max_tuit"> leave blank for don't care </div>
+        <div id="max_tuit_textbox"> <input type="text" id="max_tuit" size="14"/> </div>
+        <div id="big_max_sat"> Maximum High SAT </div>
+        <div id="small_max_sat"> leave blank for don't care </div>
+        <div id="max_sat_textbox"> <input type="text" id="max_sat" size="14"/> </div>
+        <div id="big_min_sat"> Minimum Low SAT </div>
+        <div id="small_min_sat"> leave blank for don't care </div>
+        <div id="min_sat_textbox"> <input type="text" id="min_sat" size="14"/> </div>
+    </div>
+    <div id="update_button"> <button class="update" type="button" id="update"> Update </button> </div>
+</body>
+</html>

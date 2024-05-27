@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Stanford Gallery</title>
+<style>
+#photoSection {
+	position: absolute;
+	top: calc((100% - 600px)/2);
+	bottom: calc((100% - 600px)/2);
+	left: calc((100% - 800px)/2);
+	right: calc((100% - 800px)/2);
+}
+
+#caption {
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 14pt;
+	font-family: sans-serif;
+	background-color: #008800;
+	opacity: 0.5;
+
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+</style>
+</head>
+<body>
+<div id="photoSection">
+	<img id='photo' src='memchu.jpg' alt='photo' />
+	<div id="caption">
+		Stanford Memorial Church - the church used to have an 80' bell tower, which fell in the 1906 earthquake.
+	</div>
+	<div id="forwardOverlay"></div>
+	<div id="backwardOverlay"></div>
+</div>
+<script>
+"use strict";
+
+var photoArray = [
+		{filename: "memchu.jpg",
+		 caption: "Stanford Memorial Church - the church used to have an 80' bell tower, which fell in the 1906 earthquake."},
+		{filename: "quad.jpg",
+		 caption: "The Stanford Quad"},
+		{filename: "hoop.jpg",
+		 caption: "The <i>Red Hoop Fountain</i> with Green Library in the background."},
+		{filename: "memorial-court.jpg",
+		 caption: "Memorial Court (in the front of the Quad) with Rodin's <i>Burghers of Calais</i> statues."},
+		{filename: "gates.jpg",
+		 caption: "The Gates Building - home of Stanford Computer Science."},
+		{filename: "stone-river.jpg",
+		 caption: "The Stone River statue near the Cantor Arts Center (Stanford's own art museum)."},
+	];
+
+var shownForwardOverlay = document.getElementById("forwardOverlay");
+var shownBackwardOverlay = document.getElementById("backwardOverlay");
+var photo_section = document.getElementById("photoSection");
+var frameWidth;
+var frameHeight;
+
+shownForwardOverlay.style.position = "absolute";
+shownForwardOverlay.style.right = "0px";
+shownForwardOverlay.style.top = "0px";
+shownForwardOverlay.style.height = "600px";
+shownForwardOverlay.style.width = "400px";
+
+shownBackwardOverlay.style.position = "absolute";
+shownBackwardOverlay.style.right = "400px";
+shownBackwardOverlay.style.top = "0px";
+shownBackwardOverlay.style.height = "600px";
+shownBackwardOverlay.style.width = "400px";
+
+var currPic = 0;
+
+function goForward() {
+	currPic = currPic + 1;
+    if (currPic >= photoArray.length) { currPic = 0; }
+    document.getElementById("photo").src = photoArray[currPic].filename;
+	document.getElementById("caption").innerHTML = photoArray[currPic].caption;
+}
+
+function goBackward() {
+	currPic = currPic - 1;
+    if (currPic < 0 ) { currPic = photoArray.length-1; }
+    document.getElementById("photo").src = photoArray[currPic].filename;
+	document.getElementById("caption").innerHTML = photoArray[currPic].caption;
+}
+
+function handleResize() {
+	frameWidth = window.innerWidth;
+	frameHeight = window.innerHeight;
+	photo_section.style.position = "absolute";
+	photo_section.style.left = (frameWidth/2 - 400) + "px";
+	photo_section.style.top = (frameHeight/2 - 300) + "px";
+}
+
+shownForwardOverlay.addEventListener("click", goForward);
+shownBackwardOverlay.addEventListener("click", goBackward);
+window.addEventListener("resize", handleResize, false);
+
+</script>
+</body>
+</html>

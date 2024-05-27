@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title> Book search </title>
+<link href="bookland.css" rel="stylesheet" type="text/css" />
+<script src="bookland_book_info.js" defer></script>
+<script src="bookland_clear_info.js" defer></script>
+</head>
+<body>
+    <h1> 
+        bookland
+    </h1>
+    <div id="content">
+       <table>
+            <tr><td><label for="author_name"> Author name: </label></td>
+                <td><input name="author_name" id="author_name" type="text" size="22" /></td></tr>
+            <tr><td><label for="book_title"> Book title: </label></td>
+                <td><input name="book_title" id="book_title" type="text" size="22" /></td></tr>
+            <tr><td></td>
+                <td><button class="find_book" type="button" id="find_book"> Find book </button>
+                    <button class="clear_info" type="button" id="clear_info" onclick="clear_info()"> Clear info </button></td></tr>
+        </table>
+        <div id="information">
+	        <textarea rows="20" cols="50" id="description"></textarea>
+        </div>
+    </div>
+</body>
+</html>

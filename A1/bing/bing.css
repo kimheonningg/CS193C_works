@@ -1,0 +1,129 @@
+#main {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 816px) {
+	body {
+		display: grid;
+		grid-template-columns: 500px 150px 150px;
+		grid-template-rows: 20% 80%;
+		margin-left: calc((100% - 815px) / 2);
+	}
+
+	h1 {
+		font-size: 36pt;
+	}
+
+	#title {
+		float: right;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+	}
+
+	#autumn {
+		grid-column-start: 3;
+		grid-row-start: 1;
+		text-align: right;
+		padding-right: 10px;
+		margin-top: 30%;
+	}
+
+	#autumn3 {
+		display: none;
+	}
+
+	#imgB {
+		padding-right: 10px;
+		margin-right: 1px;
+		float: left;
+		width: 300px;
+	}
+
+	#content{
+		grid-column-start: 1;
+		grid-row-start: 2;
+	}
+
+	#calendar {
+		margin-left: 20px;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 2; 
+	}
+}
+
+@media (max-width: 815px) and (min-width: 650px) {
+	body {
+		display: grid;
+	}
+
+	h1 {
+		font-size: 32pt;
+	}
+
+	#autumn {
+		text-align: left;
+	}
+
+	#autumn1, #autumn2 {
+		display: none;
+	}
+
+	#imgB {
+		padding-right: 10px;
+		margin-right: 1px;
+		float: left;
+		width: 300px;
+	}
+}
+
+@media (max-width: 649px) {
+	h1{
+		font-size: 28pt;
+	}
+
+	#imgB {
+		width: calc(100% - 10px);
+	}
+
+	.autumn1, .autumn2 {
+		display: none;
+	}
+}
+
+h1 {
+    color: #cc0000;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+h3{
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#cal1, #cal2, #cal3, #cal4 {
+    border-bottom: black 1px solid;
+	font-size: 12pt;
+	font-family: sans-serif;
+	font-style: italic;
+}
+
+#cal1 {
+    border-top: black 1px solid;
+}
+
+#autumn {
+	color: #cc0000;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+#bingConcertHall {
+	size: 18pt;
+	font-weight: bold;
+	font-family: sans-serif;
+}
